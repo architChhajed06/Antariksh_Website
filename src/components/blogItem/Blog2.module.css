@@ -1,0 +1,427 @@
+
+
+.blogItem{
+    width: 80%;
+    min-height: 150px;
+    max-height: 180px;
+    
+    /* background-color: rgba(0, 0, 0, 0.392); */
+    background-color: #121212;
+    padding: 7px;
+    border: 1px solid #2a2a2a;
+    color: #e5e6e7;
+    font-family: 'Tommorow';
+    
+
+    display: flex;
+}
+
+.blogItem:hover{
+    background-color: #292929;
+    border-color: rgba(255, 255, 255, 0.258);
+}
+
+.blogImgContainer{
+    width: 20%;
+    max-height: 170px;
+}
+
+.blogImgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* BLOG INFO CONTAINER */
+.blogInfoContainer{
+    width: 80%;
+    /* border: 1px solid green; */
+}
+
+.blogTitleContainer{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20%;
+    /* border: 1px solid red; */
+    font-size: 20px;
+    padding-left: 10px;
+    color: #e6e6e6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.blogDesc{
+    height: 60%;
+    /* border: 1px solid blue; */
+    color: #757575;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.readDesc{
+    height: 70%;
+    overflow-x: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+.readMorelink{
+    height: 30%;
+    color: purple;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+.readMorelink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.blogMetaDet{
+    height: 20%;
+    /* border: 1px solid orange; */
+
+    display: flex;
+}
+
+
+.likeContainer{
+    width: 5%;
+    /* border: 2px solid green; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.likeContainer{
+    cursor: pointer;
+}
+
+
+.likeCountContainer{
+    width: 10%;
+    /* border: 1px solid white; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color:#9E9E9E;
+    font-size: 15px;
+    font-family: sans-serif;
+    flex-grow: 1;
+}
+
+
+.authorNameContainer
+{
+    width: 30%;
+    /* border: 2px solid yellow; */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.authorBox{
+    min-width: 40%;
+    /* border: 1px solid blue; */
+    width: auto;
+    height: 20px;
+
+    background-image: linear-gradient(to right, grey, white);
+    border-radius: 15px;
+    color: rgb(78, 75, 75);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    font-size: 15px;
+}
+
+/* TO MAKE THE PERSON LOGO AND AUTHOR NAME STICK TOGETHER WE HAVE MADE THIS CONTAINER ALSO WE HAVE SET IT FLEX TO ALIGN THEM VERTICALLY */
+.logoNameContainer{
+    display: flex;
+    align-items: center;
+}
+
+.dateContainer{
+    width: 20%;
+    /* border: 1px solid violet; */
+    color: #989b9f;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.shareContainer{
+    width: 30px;
+    /* border: 1px solid indigo; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.truncate-to-2-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+@media (max-width: 1200px){
+    .blogImgContainer{
+        width: 30%;
+        max-height: 170px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .authorBox{
+        width: 60%;
+    }
+    .blogInfoContainer{
+        width: 70%;
+    }
+}
+
+
+
+.blogItem{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 280px;
+    padding: 7px;
+    margin: 0px;
+
+
+    height: auto;
+    max-height: none;
+}
+.blogImgContainer{
+    width: 100%;
+    height: 150px;
+}
+.blogInfoContainer{
+    width: 100%;
+    height: 200px;
+}
+
+
+.blogTitleContainer{
+    padding-left: 5px;
+    font-size: 15px;
+    padding-top: 5px;
+
+    /* TO MAKE THE TEXT CLAMP AFTER TWO LINES */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: pre-wrap;
+    line-height: 18px;
+}
+.authorBox{
+    width: 90%;
+    font-size: 10px;
+}
+.dateContainer{
+    font-size: 13px;
+}
+
+.likeContainer{
+    width: 16%;
+}
+
+.authorNameContainer{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .blogItem{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 260px;
+        padding: 0px;
+        margin: 0px;
+
+
+        height: auto;
+        min-height: none;
+        max-height: none;
+    }
+    .blogImgContainer{
+        width: 99%;
+        height: 150px;
+    }
+    .blogInfoContainer{
+        width: 100%;
+        height: 200px;
+    }
+
+
+    .blogTitleContainer{
+        padding-left: 5px;
+        font-size: 15px;
+        padding-top: 5px;
+
+        /* TO MAKE THE TEXT CLAMP AFTER TWO LINES */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        white-space: pre-wrap;
+        line-height: 18px;
+    }
+    .authorBox{
+        width: 90%;
+        font-size: 10px;
+    }
+    .dateContainer{
+        font-size: 13px;
+    }
+
+    .likeContainer{
+        width: 16%;
+    }
+
+    .authorNameContainer{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 800px){
+    .blogMetaDet{
+        padding-left: 15px;
+    }
+    .likeContainer{
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 700px){
+    .blogItem{
+        width: 43%;
+    }
+    .blogImgContainer{
+        width: 99%;
+        height: calc(350px - 170px);
+    }
+    .blockInfoContainer{
+    }
+    .likeContainer{
+        width: 16%;
+    }
+}
+
+@media (max-width: 490px){
+    .blogItem{
+        width: 70%;
+        height: auto;
+    }
+    .blogImgContainer{
+        width: 99%;
+        height: 170px;
+    }
+}
+
+
+@media (max-width: 320px){
+    .blogItem{
+        width: 82%;
+        height: auto;
+    }
+    .blogImgContainer{
+        width: 99%;
+        height: 170px;
+    }
+}
+
+
+/* TO STYLE THE SCROLL BARS */
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0px;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+
+  /* ANIMATION FOR PRESSING LIKE BUTTON */
+  
+
+  .popAnimation{
+    animation-name: popUp;
+    animation-timing-function: 1s;
+    animation-iteration-count: 1;
+  }
+
+
+
+  .likeContainer:active{
+    animation-name: popUp;
+    animation-timing-function: 1s;
+    animation-iteration-count: 1;
+  }
+
+
+
+  .blogItem{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+  }
+
+
+
+  @keyframes popUp {
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+  

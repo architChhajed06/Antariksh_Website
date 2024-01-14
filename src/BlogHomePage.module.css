@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+@font-face {
+    font-family: mokoto;
+    src: url('./font/mokoto.ttf');
+}
+body{
+    background-color:  #111333;
+}
+
+.box{
+    margin: auto;
+    width: calc(100% - 3px);
+    height: 50px;
+    border: 2px solid white;
+}
+
+
+
+canvas{position:fixed;}
+
+@media (max-width: 1000px){
+    .introBox{
+        height: auto;
+    }
+    .heading h1{
+        font-size: 88px;
+    }
+}
+
+@media (max-width: 660px){
+    .heading h1{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 500px){
+    .heading h1{
+        font-size: 40px;
+    }
+}
+

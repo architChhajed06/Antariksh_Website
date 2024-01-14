@@ -1,0 +1,24 @@
+
+
+
+.blogItem{
+    width: 80%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    background-color: rgba(0, 0, 0, 0.542);
+    padding: 7px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 5px white;
+    
+    display: grid;
+    grid-template-columns: 0.7fr 2.5fr;
+    color: #e5e6e7;
+    font-family: 'Tommorow';
+    /* background-color: white; */
+    /* background-color: #1a1d2e; */
+    /* background: linear-gradient(to right, #000000, #3533cd);; */
+    /* background-image: linear-gradient(to right, purple, #3533cd); */
+}
+
